@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "nyc --reporter=text mocha"
+        "test": "nyc --reporter=html --reporter=text mocha",
+        "coverage": "nyc check-coverage --per-file --branches 80 --functions 80 --lines 80 --statements 80"
     },
     "author": "",
     "license": "ISC",
